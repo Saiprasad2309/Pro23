@@ -17,7 +17,7 @@ function setup() {
 	createCanvas(800, 700);
 	rectMode(CENTER);
 	
-	packageSprite=createSprite(width/2, 80, 10,10);
+	packageSprite=createSprite(width/2, 80, 50,10);
 	packageSprite.addImage(packageIMG)
 	packageSprite.scale=0.2
 
@@ -31,14 +31,14 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	packageBody = Bodies.circle(width/2 , 200 , 5,{isStatic:true} );
+	packageBody = Bodies.circle(width/2 , 200 , 17,{isStatic:true} );
 	World.add(world, packageBody);
 	
-	rect1=createSprite(350,600,5,100,{isStatic:true});
+	rect1=createSprite(350,610,5,100,{isStatic:true});
 	rect1.shapeColor = ("red");
-	rect2=createSprite(450,650,210,5, {isStatic:true});
+	rect2=createSprite(450,658,210,5, {isStatic:true});
 	rect2.shapeColor =("red");
-	rect3=createSprite(550,600,5,100, {isStatic:true});
+	rect3=createSprite(550,610,5,100, {isStatic:true});
 	rect3.shapeColor=("red");
 
 	//Create a Ground
